@@ -1,0 +1,66 @@
+/*Remove automatic margin and padding from all elements*/
+*{
+	margin:0;
+	padding: 0;
+}
+
+/*positioning for the elements of the mobile navigation*/
+.mobile-navigation{
+	display: flex;
+  justify-content: space-between;
+  float: right;
+  position: fixed;
+  right: 5%;
+  top: 3.5%;
+}
+
+/*mobile navigation menu content*/
+
+/* MENU*/
+
+.overlay{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index:100;
+	left: 0;
+	top:0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+}
+
+.overlay-content{
+	position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  overflow-x: hidden;
+  z-index: 20;
+  transform: translateY(-100%);
+
+}
+
+.overlay a {
+	padding:8px;
+	text-decoration: none;
+	display: block;
+	transition: 0.5s;
+	margin-top: 1em;
+	overflow-x: hidden;
+}
+
+.closebtn{
+	text-align: right;
+	position:absolute;
+	right:5%;
+}
+
+/*Positioning for the logo */
+.logo{
+    position: fixed;
+    left: 50%;
+    transform: translatex(-50%);
+}
