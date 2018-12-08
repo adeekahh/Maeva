@@ -1,7 +1,5 @@
 // FETCH WORKS DATA
-const workTemplate = document.querySelector("#template-works");
-console.log(workTemplate);
-
+const template = document.querySelector("#tempate-works").content;
 
 
 

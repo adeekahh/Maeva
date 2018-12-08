@@ -8,11 +8,12 @@
 	<!--Link to Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<script src="works.js"></script>
+
 	</head>
 
 <body>
 	<header>
+		<!-------------------------NAVIGATION-------------------------->
 		<div class="mobile-navigation">
 			<h2 class="logo"><a href="index.html">MLC</a></h2> <span class="openbtn" onclick="openNav()">&#9776;</span> </div>
 		<nav id="myNav" class="overlay"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
@@ -23,12 +24,16 @@
 				<li class="navigation-link navigation-link-4"><a href="/blog/">Contact</a></li>
 			</ul>
 		</nav>
+		<!---------------------END OF NAVIGATION---------------------->
 	</header>
 	<main>
+		<!--------------------------WORKS----------------------------->
 		<div class="works-container">
 
 		</div>
+		<!-----------------------END OF WORKS------------------------->
 
+		<!----------------------TEMPLATE FOR WORKS--------------------->
 		<template id="template-works">
 			<div class="work">
 				<img src="images/photo_example.jpg" alt="Image" class="work-image">
@@ -49,6 +54,7 @@
 				</div>
 			</div>
 				</template>
+		<!---------------------END OF TEMPLATE FOR WORKS---------------->
 	</main>
 	<script src="script.js"></script>
 
