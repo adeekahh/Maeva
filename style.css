@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+img{
+	 max-width: 100%;
+}
+
 /*positioning for the elements of the mobile navigation*/
 .mobile-navigation{
 	display: flex;
@@ -28,6 +32,7 @@
 	background-color: white;
 	overflow-x: hidden;
 	transition: 0.5s;
+	opacity: 0.8;
 
 }
 
@@ -39,7 +44,7 @@
   margin-top: 30px;
   overflow-x: hidden;
   z-index: 20;
-  transform: translateY(-100%);
+  transform: translateY(-75%);
 
 }
 
@@ -50,6 +55,10 @@
 	transition: 0.5s;
 	margin-top: 1em;
 	overflow-x: hidden;
+}
+
+.openbtn{
+	cursor: pointer;
 }
 
 .closebtn{
@@ -63,4 +72,65 @@
     position: fixed;
     left: 50%;
     transform: translatex(-50%);
+}
+
+/*Styling for the works*/
+
+
+
+.work {
+	margin-top: 10em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  position: relative;
+  width: 50%;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+
+}
+
+.work:hover .work-overlay {
+  opacity: .75;
+}
+
+.work:hover .work-credits{
+	opacity: 1;
+}
+
+.work-credits {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.work-credits ul{
+	list-style-type: none;
+}
+
+.photographer, .stylist, .makeup, .assistant{
+	padding-bottom: 1em;
 }
