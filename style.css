@@ -8,6 +8,21 @@ img{
 	 max-width: 100%;
 }
 
+body{
+	font-family: 'EB Garamond', serif;
+}
+
+/*GENERAL STYLING*/
+
+a{
+	text-decoration: none;
+	color:black;
+
+}
+
+
+
+
 /*MOBILE NAVIGATION*/
 .mobile-navigation{
 	display: flex;
@@ -19,8 +34,6 @@ img{
 }
 
 /*NAVIGATION LINKS*/
-
-/* MENU*/
 
 .overlay{
 	height: 100%;
@@ -45,6 +58,7 @@ img{
   overflow-x: hidden;
   z-index: 20;
   transform: translateY(-75%);
+	-ms-transform: translateY(-75%);
 
 }
 
@@ -55,10 +69,22 @@ img{
 	transition: 0.5s;
 	margin-top: 1em;
 	overflow-x: hidden;
+	font-size:24px;
+	transition:0.2s ease;
+}
+
+.overlay a:hover{
+	font-size:28px;
 }
 
 .openbtn{
 	cursor: pointer;
+	font-size:24px;
+	transition:0.2s ease;
+}
+
+.openbtn:hover{
+	font-size:28px
 }
 
 .closebtn{
@@ -67,19 +93,20 @@ img{
 	right:5%;
 }
 
-/*Positioning for the logo */
+/*LOGO*/
 .logo{
     position: fixed;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
 }
 
-/*Styling for the works*/
+/*WORKS*/
 
 
 
 .work {
-	margin-top: 10em;
+	margin-top: 5em;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -104,6 +131,7 @@ img{
   opacity: 0;
   transition: .5s ease;
   background-color: black;
+	display: none;
 
 }
 
@@ -116,15 +144,18 @@ img{
 }
 
 .work-credits {
-  color: white;
   font-size: 20px;
+	opacity: 0;
+	transition: .5s ease;
+	padding-top:0.5em;
+	/*
   position: absolute;
   top: 50%;
   left: 50%;
-	opacity: 0;
+
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-	text-align: center;
+	*/
 }
 
 .work-credits ul{
@@ -132,5 +163,17 @@ img{
 }
 
 .photographer, .stylist, .makeup, .assistant{
-	padding-bottom: 1em;
+	font-family:'Roboto';
+	font-size: 24px;
+	margin-bottom:0.5em;
 }
+
+.hair{
+	font-family:'Roboto';
+	font-size:24px;
+}
+
+.photographer-title, .stylist-title, .makeup-title, .assistant-title, .hair-title{
+	font-size:12px;
+}
+
