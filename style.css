@@ -339,6 +339,27 @@ input[type=submit]:hover {
   padding: 5em 1.2em;
 }
 
+/*ABOUT PAGE*/
+.about-page-container{
+padding:5em 1em 0em 1em;
+}
+
+.about-page-title{
+text-align: center;
+padding:1em 0;
+}
+
+.about-page-image{
+	padding-bottom: 1em;
+}
+
+.about-page-text{
+	padding-bottom:1em;
+	line-height: 1.4;
+}
+
+
+
 /*TABLET*/
 @media screen and (min-width: 40em){
 	.works-container{
