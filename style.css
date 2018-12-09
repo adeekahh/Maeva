@@ -81,10 +81,11 @@ a{
 	cursor: pointer;
 	font-size:24px;
 	transition:0.2s ease;
+	transform-origin: center;
 }
 
 .openbtn:hover{
-	font-size:28px
+	transform: scale(1.2);
 }
 
 .closebtn{
@@ -107,7 +108,7 @@ a{
 
 .work {
 	margin-top: 5em;
-	display: block;
+	display: ;
 	margin-left: auto;
 	margin-right: auto;
   position: relative;
@@ -145,7 +146,7 @@ a{
 
 .work-credits {
   font-size: 20px;
-	opacity: 0;
+	opacity: 1;
 	transition: .5s ease;
 	padding-top:0.5em;
 	/*
@@ -177,3 +178,22 @@ a{
 	font-size:12px;
 }
 
+
+/*TABLET*/
+@media screen and (min-width: 40em){
+	.works-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+}
+
+
+/*DESKTOP*/
+@media screen and (min-width: 60em){
+
+
+
+
+}
