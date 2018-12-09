@@ -91,6 +91,7 @@ a{
 .closebtn{
 	text-align: right;
 	position:absolute;
+	transform-origin: center;
 	right:5%;
 }
 
@@ -176,6 +177,92 @@ a{
 
 .photographer-title, .stylist-title, .makeup-title, .assistant-title, .hair-title{
 	font-size:12px;
+}
+
+
+/*BLOG*/
+.featured-post{
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	height: 100vh;
+	background-image: url('images/photo_example.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+
+}
+
+.featured-post-image{
+	max-width: 75vw;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 25%);
+
+
+}
+
+.featured-post-thumbnail-text{
+	position: absolute;
+	bottom: 0;
+	padding: 0em 1em;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+
+.featured-post-title{
+	padding:0.5em 0;
+	border-bottom: 5px solid white;
+}
+
+.featured-post-introtext{
+	font-family:'Roboto';
+	font-weight: 400;
+	font-size:16px;
+	padding: 1em 0;
+}
+
+.featured-post-image{
+	position: absolute;
+	z-index: -1;
+}
+
+.featured-readmore-button{
+	padding: 1em;
+	width: 100%;
+	margin: 1em 0;
+	background-color: white;
+	border: none;
+	font-family: 'Roboto'
+	}
+
+.post{
+	padding: 1em;
+}
+
+.post-thumbnail-text{
+	padding:1em 0;
+}
+
+.post-introtext{
+	font-family:'Roboto';
+	font-weight: 400;
+	font-size:16px;
+	padding: 1em 0;
+
+
+}
+
+.readmore-button{
+	padding: 1em;
+	width: 100%;
+	margin: 1em 0;
+	background-color: black;
+	color: white;
+	border: none;
+	font-family: 'Roboto'
+
 }
 
 

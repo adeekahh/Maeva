@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maëva Le Callonec | Stylist from Paris </title>
+	<!--Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	</head>
+
+<body>
+	<header>
+		<!-------------------------NAVIGATION-------------------------->
+		<div class="mobile-navigation">
+			<h2 class="logo"><a href="index.html">MLC</a></h2> <span class="openbtn" onclick="openNav()">&#9776;</span> </div>
+		<nav id="myNav" class="overlay"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul class="overlay-content">
+				<li class="navigation-link navigation-link-1"><a href="index.html">Works</a></li>
+				<li class="navigation-link navigation-link-2"><a href="blog.html">Blog</a></li>
+				<li class="navigation-link navigation-link-3"><a href="/about">About</a></li>
+				<li class="navigation-link navigation-link-4"><a href="/contact/">Contact</a></li>
+			</ul>
+		</nav>
+		<!---------------------END OF NAVIGATION---------------------->
+	</header>
+	<main>
+		<!-------------------------- BLOG ----------------------------->
+			<div class="blog-container">
+				<div class="featured-post-container">
+				<div class="featured-post">
+					<div class="featured-post-thumbnail-text">
+					<h1 class="featured-post-title">Title of a very interesting featured post</h1>
+					<h2 class="featured-post-introtext">Lorem ipsum dolor amet gochujang marfa kale chips 3 wolf moon umami, butcher kinfolk coloring book trust fund letterpress fixie hexagon ennui echo park chicharrones.
+					</h2>
+					<button class="featured-readmore-button">Read More</button>
+					</div>
+
+				</div>
+				</div>
+				<div class="post-container">
+					<div class="post">
+					<img class="post-photo" src="images/photo_example.jpg">
+					<div class="post-thumbnail-text">
+					<h1 class="post-title">Title of a very interesting normal post</h1>
+					<h2 class="post-introtext">Lorem ipsum dolor amet gochujang marfa kale chips 3 wolf moon umami, butcher kinfolk coloring book trust fund letterpress fixie hexagon ennui echo park chicharrones.
+					</h2>
+					<button class="readmore-button">Read more</button>
+					</div>
+
+				</div>
+
+				</div>
+
+				<div class="post-container">
+					<div class="post">
+					<img class="post-photo" src="images/photo_example.jpg">
+					<div class="post-thumbnail-text">
+					<h1 class="post-title">Title of a very interesting normal post</h1>
+					<h2 class="post-introtext">Lorem ipsum dolor amet gochujang marfa kale chips 3 wolf moon umami, butcher kinfolk coloring book trust fund letterpress fixie hexagon ennui echo park chicharrones.
+					</h2>
+					<button class="readmore-button">Read more</button>
+					</div>
+
+				</div>
+
+				</div>
+
+				<div class="posts-container">
+
+				</div>
+			</div>
+		<!-----------------------END OF WORKS------------------------->
+
+		<!----------------------TEMPLATE FOR BLOGPOSTS--------------------->
+		<template id="template-works">
+			<div class="work">
+				<img src="images/photo_example.jpg" alt="Image" class="work-image">
+				<div class="work-overlay"></div>
+				<div class="work-credits">
+						<ul>
+							<h2 class="photographer-title">Photographer</h2>
+							<li class="photographer"></li>
+							<h2 class="stylist-title">Stylist</h2>
+							<li class="stylist"></li>
+							<h2 class="makeup-title">Makeup</h2>
+							<li class="makeup"></li>
+							<h2 class="assistant-title">Assistant</h2>
+							<li class="assistant"></li>
+							<h2 class="hair-title">Hair</h2>
+							<li class="hair"></li>
+						</ul>
+				</div>
+			</div>
+				</template>
+		<!---------------------END OF TEMPLATE FOR WORKS---------------->
+	</main>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
