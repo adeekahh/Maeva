@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Maëva Le Callonec | Stylist from Paris </title>
+	<!--Link to Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i|Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	</head>
+
+<body>
+	<header>
+		<!-------------------------NAVIGATION-------------------------->
+		<div class="mobile-navigation">
+			<h2 class="logo"><a href="index.html">MLC</a></h2> <span class="openbtn" onclick="openNav()">&#9776;</span> </div>
+		<nav id="myNav" class="overlay"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+			<ul class="overlay-content">
+				<li class="navigation-link navigation-link-1"><a href="index.html">Works</a></li>
+				<li class="navigation-link navigation-link-2"><a href="blog.html">Blog</a></li>
+				<li class="navigation-link navigation-link-3"><a href="about.html">About</a></li>
+				<li class="navigation-link navigation-link-4"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!---------------------END OF NAVIGATION---------------------->
+	</header>
+	<main>
+
+
+	<div class="contact-form-container">
+		<h1 class="contact-page-title">
+		Let's get in touch!
+		</h1>
+
+  <form class="contact-form" action="action_page.php">
+
+    <label class="first-name" for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+    <label class="last-name" for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+
+    <label class="message" for="message">Message</label>
+    <textarea id="subject" name="subject" placeholder="Tell me about your project" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+	</main>
+	<script src="mobilenav.js"></script>
+
+</body>
+
+</html>

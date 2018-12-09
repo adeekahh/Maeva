@@ -23,6 +23,34 @@ function showSinglePost(post) {
   copy2.querySelector(".date").textContent = post.acf.date;
   copy2.querySelector(".author").textContent = post.acf.author;*/
   document.querySelector(".blog-container").appendChild(copy2);
+	setTimeout(document.querySelector('.featured-readmore-button').addEventListener('click', showFeaturedText), 100);
+
 }
+
 getBlogPosts();
+
+
+function showFeaturedText(){
+	document.querySelector('.featured-post-bodytext').style.display='block';
+
+
+	setTimeout(document.querySelector('.featured-readmore-button').addEventListener('click', hideFeaturedText), 100);
+	console.log('showingthetext');
+
+};
+
+
+function hideFeaturedText(){
+	document.querySelector('.featured-post-bodytext').style.display='none';
+	console.log('hidingtext');
+
+	setTimeout(document.querySelector('.featured-readmore-button').addEventListener('click', showFeaturedText), 100);
+
+};
+
+
+
+
+
+
 
