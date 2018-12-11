@@ -9,7 +9,7 @@ img{
 }
 
 body{
-	font-family: 'EB Garamond', serif;
+	font-family: 'Martel Sans', sans-serif;
 }
 
 /*GENERAL STYLING*/
@@ -27,14 +27,14 @@ a{
 .burger-menu-line-1{
 	width:40px;
 	height:2px;
-	background-color: black;
+	background-color: #DBDBDB;
 	margin-bottom: 0.5em;
 }
 
 .burger-menu-line-2{
 	width:40px;
 	height:3px;
-	background-color: black;
+	background-color: #DBDBDB;
 }
 
 img.social-link{
@@ -168,7 +168,7 @@ img.social-link{
 
 .work-credits {
   font-size: 20px;
-	opacity: 1;
+	opacity: 0.8;
 	transition: .5s ease;
 	padding-top:0.5em;
 	/*
@@ -308,6 +308,7 @@ img.social-link{
 /*CONTACT-PAGE*/
 
 .contact-page-title{
+	padding-top: 1em;
 	padding-bottom: 0.25em;
 	font-size:48px;
 	opacity: 0.5;
@@ -388,6 +389,28 @@ padding:3.5em 0 1.5em 0;
 .about-page-text{
 	padding-bottom:1em;
 	line-height: 1.4;
+}
+
+
+/*CINQTONALITÉS*/
+
+.cinqtonalites-container{
+
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%)
+
+}
+
+.cinqtonalites-image{
+	transform: rotate(-90deg);
+	width: 50%
 }
 
 
@@ -502,13 +525,8 @@ padding:3.5em 0 1.5em 0;
 	}
 
 	.work-credits{
-		position: absolute;
-		z-index: 2;
-		bottom:50%;
-		transform: translateY(50%);
-		color: white;
-/*		opacity: 0;*/
-		padding:1em
+		/*		opacity: 0;*/
+		padding:1em 0;
 	}
 
 	.work-credits:hover{
@@ -555,6 +573,32 @@ padding:3.5em 0 1.5em 0;
 		width: 50vw;
 		flex:1;
 		float: right;
+	}
+
+	.contact-page-title{
+		text-align: center;
+		padding-top: 0;
+	}
+
+	.contact-page-sub-title{
+		text-align: center;
+	}
+
+	.contact-form{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1060px !important;
+	}
+
+	.contact-form-left{
+		border-right: 1px solid black;
+		padding-right: 5em;
+		width: 40vw;
+	}
+
+	input[type=submit]{
+		margin-left: 10em;
 	}
 
 
