@@ -23,17 +23,34 @@ a{
 
 
 
-/*MOBILE NAVIGATION*/
-.mobile-navigation{
-	display: flex;
-  justify-content: space-between;
-  float: right;
-  position: fixed;
-  right: 5%;
-  top: 3.5%;
-	z-index:2;
+/*NAVIGATION*/
+.burger-menu-line-1{
+	width:40px;
+	height:2px;
+	background-color: black;
+	margin-bottom: 0.5em;
 }
 
+.burger-menu-line-2{
+	width:40px;
+	height:3px;
+	background-color: black;
+}
+
+img.social-link{
+  width: 25px;
+	padding:0.1em;
+}
+
+.social-navigation-links{
+		width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 2px solid black;
+
+}
 /*NAVIGATION LINKS*/
 
 .overlay{
@@ -46,7 +63,6 @@ a{
 	background-color: white;
 	overflow-x: hidden;
 	transition: 0.5s;
-	opacity: 0.8;
 
 }
 
@@ -58,8 +74,8 @@ a{
   margin-top: 30px;
   overflow-x: hidden;
   z-index: 20;
-  transform: translateY(-75%);
-	-ms-transform: translateY(-75%);
+  transform: translateY(-60%);
+	-ms-transform: translateY(-60%);
 
 }
 
@@ -80,9 +96,11 @@ a{
 
 .openbtn{
 	cursor: pointer;
-	font-size:24px;
 	transition:0.2s ease;
 	transform-origin: center;
+	position: fixed;
+	top:2em;
+	right:5%;
 }
 
 .openbtn:hover{
@@ -99,9 +117,10 @@ a{
 /*LOGO*/
 .logo{
     position: fixed;
-    left: 50%;
+    left: 5%;
+		width:150px;
+		top:1.8em;
 
-    transform: translateX(-50%);
 		-ms-transform: translateX(-50%);
 }
 
@@ -362,17 +381,112 @@ padding:1em 0;
 
 /*TABLET*/
 @media screen and (min-width: 40em){
-	.works-container{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
+
+	.openbtn{
+		top:2.5em
 
 	}
+
+	.logo{
+		top:2.75em;
+
+	}
+
+	.works-container{
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+		padding-bottom: 5em;
+	}
+
+	.work:nth-child(1) {
+    grid-column-start: 2;
+		margin-top: 7em;
+	}
+
+
+	.work:nth-child(2n+3){
+
+		margin-top:45em;
+	}
+
+
+	.burger-menu-line-1{
+	width:60px;
+}
+
+.burger-menu-line-2{
+	width:60px;
+}
+
+
+	img.social-link{
+  width: 40px;
+	padding:0.3em;
+}
+
 
 }
 
 
 /*DESKTOP*/
 @media screen and (min-width: 60em){
+
+	.logo{
+		width:250px;
+		left:3%;
+		top:2em;
+	}
+
+	.openbtn{
+		right: 3%;
+		top:2.5em;
+	}
+
+
+	.burger-menu-line-1{
+	width:100px;
+	height:4px;
+}
+
+.burger-menu-line-2{
+	width:100px;
+	height:4px;
+}
+
+
+	.work{
+		position: relative;
+	}
+
+	.work-credits{
+		position: absolute;
+		z-index: 2;
+		bottom:50%;
+		transform: translateY(50%);
+		color: white;
+/*		opacity: 0;*/
+		padding:1em
+	}
+
+	.work-credits:hover{
+		opacity:1
+		padding:2em;
+
+	}
+
+	.work-overlay{
+		display: block;
+		z-index: 0;
+		position: absolute;
+	}
+
+
+	img.social-link{
+  width: 50px;
+	padding:0.5em;
+}
+
+
 
 
 
