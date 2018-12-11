@@ -209,8 +209,7 @@ img.social-link{
 	background-image: url('images/photo_example.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
-
-
+	z-index: -1;
 }
 
 .featured-post-image{
@@ -309,10 +308,22 @@ img.social-link{
 /*CONTACT-PAGE*/
 
 .contact-page-title{
-	padding-bottom: 1em;
-	text-align: center;
+	padding-bottom: 0.25em;
+	font-size:48px;
+	opacity: 0.5;
 	width: 100%;
 
+}
+
+.contact-page-sub-title{
+	padding-bottom: 0.5em;
+	font-size:36px;
+}
+
+.contact-page-headers-container{
+	max-width: 540px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 form.contact-form{
@@ -360,22 +371,25 @@ input[type=submit]:hover {
 
 /*ABOUT PAGE*/
 .about-page-container{
-padding:5em 1em 0em 1em;
+padding: 1em 1em;
 }
 
 .about-page-title{
 text-align: center;
-padding:1em 0;
+padding:3.5em 0 1.5em 0;
 }
 
 .about-page-image{
 	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid black
 }
 
 .about-page-text{
 	padding-bottom:1em;
 	line-height: 1.4;
 }
+
 
 
 
@@ -423,6 +437,35 @@ padding:1em 0;
   width: 40px;
 	padding:0.3em;
 }
+
+	/*ABOUT PAGE - TABLET */
+
+	.about-page-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about-page-image{
+		width: 75%;
+		padding-right: 5em;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 0;
+		border-right: 1px solid black;
+	}
+
+	.about-page-text{
+		padding:2em;
+	}
+
+	.blog-container{
+		max-width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
 
 
 }
