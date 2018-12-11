@@ -529,7 +529,33 @@ padding:3.5em 0 1.5em 0;
 	padding:0.5em;
 }
 
+	.blog-container{
+		display: flex;
+		max-width: 100%;
 
+	}
+
+	.featured-post-container{
+		width: 50vw;
+    float: left;
+		z-index: -1;
+		}
+
+	.featured-post{
+		position: sticky;
+		position: -webkit-sticky;
+		top:0;
+	}
+
+	.post-container{
+		padding-top: 5em;
+	}
+
+	.post-container{
+		width: 50vw;
+		flex:1;
+		float: right;
+	}
 
 
 
