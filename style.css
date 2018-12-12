@@ -44,6 +44,10 @@ img.social-link{
 	padding:0.1em;
 }
 
+.social-link-a{
+	width:25px;
+}
+
 .social-navigation-links{
 		width: 25%;
     margin-left: auto;
@@ -51,6 +55,8 @@ img.social-link{
     margin-top: 2em;
     padding-top: 1em;
     border-top: 1px solid #DBDBDB;
+		display: flex;
+	justify-content: center;
 
 }
 /*NAVIGATION LINKS*/
@@ -90,6 +96,7 @@ img.social-link{
 	overflow-x: hidden;
 	font-size:24px;
 	transition:0.2s ease;
+	z-index: 50;
 }
 
 .overlay a:hover{
@@ -391,7 +398,7 @@ padding:3.5em 0 1.5em 0;
 .about-page-image{
 	padding-bottom: 1em;
 	margin-bottom: 1em;
-	border-bottom: 1px solid black
+	border-bottom: 1px solid #DBDBDB;
 }
 
 .about-page-text{
@@ -481,6 +488,11 @@ padding:3.5em 0 1.5em 0;
 	padding:0.3em;
 }
 
+	.social-link-a{
+		width:40px;
+		display: inline;
+	}
+
 	/*ABOUT PAGE - TABLET */
 
 	.about-page-container{
@@ -565,7 +577,21 @@ padding:3.5em 0 1.5em 0;
 	img.social-link{
   width: 50px;
 	padding:0.5em;
+	transition: width 0.4s ease;
 }
+
+	img.social-link:hover{
+	width:55px;
+	}
+
+	.social-link-a{
+		width:50px;
+		transition: width 0.4s ease;
+	}
+
+	.social-link-a:hover{
+		width:55px;
+	}
 
 	.blog-container{
 		display: flex;
