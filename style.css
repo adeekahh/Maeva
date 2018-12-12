@@ -29,14 +29,14 @@ a{
 .burger-menu-line-1{
 	width:20px;
 	height:2px;
-	background-color: #DBDBDB;
+	background-color: black;
 	margin-bottom: 0.5em;
 }
 
 .burger-menu-line-2{
 	width:20px;
 	height:3px;
-	background-color: #DBDBDB;
+	background-color: black;
 }
 
 img.social-link{
@@ -50,7 +50,7 @@ img.social-link{
     margin-right: auto;
     margin-top: 2em;
     padding-top: 1em;
-    border-top: 1px solid black;
+    border-top: 1px solid #DBDBDB;
 
 }
 /*NAVIGATION LINKS*/
@@ -196,16 +196,16 @@ img.social-link{
 	list-style-type: none;
 }
 
-.photographer, .stylist, .makeup, .assistant{
-	font-size: 24px;
+.photographer{
+	display: inline;
+	font-size: 16px;
 	margin-bottom:0.5em;
 }
 
-.hair{
-	font-size:24px;
-}
 
-.photographer-title, .stylist-title, .makeup-title, .assistant-title, .hair-title{
+
+.photographer-title{
+	display: inline;
 	font-size:12px;
 }
 
@@ -439,7 +439,7 @@ padding:3.5em 0 1.5em 0;
 
 	.works-container{
 		display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding-bottom: 5em;
 		padding-top: 5em;
 		z-index: -1;
@@ -447,13 +447,23 @@ padding:3.5em 0 1.5em 0;
 
 	.work:nth-child(1) {
     grid-column-start: 2;
-		margin-top: 7em;
+		grid-column-end:5;
+
 	}
 
+	.work:nth-child(2n+1){
+		grid-column-start: 2;
+		grid-column-end:5;
 
-	.work:nth-child(2n+3){
+	}
 
-		margin-top:45em;
+	.work:nth-child(2n+2){
+
+		grid-column-start:1;
+		grid-column-end:3;
+
+
+
 	}
 
 
