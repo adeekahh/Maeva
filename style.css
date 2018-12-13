@@ -4,7 +4,6 @@
 	padding: 0;
 }
 
-html {padding: 40px}
 img{
 	margin-left: auto;
 	margin-right: auto;
@@ -13,7 +12,6 @@ img{
 
 body{
 	font-family: 'Martel Sans', sans-serif;
-
 }
 
 /*GENERAL STYLING*/
@@ -27,14 +25,19 @@ a{
 
 
 
+
 /*NAVIGATION*/
 .burger-menu-line-1{
-	border-bottom:2px solid black;
+    border-top: 1px solid black;
+	width:45px;
+	height:2px;
+	margin-bottom: 0.5em;
 }
 
 .burger-menu-line-2{
-    border-bottom:2px solid black;
-
+    border-bottom: 1px solid black;
+	width:45px;
+	background-color: black;
 }
 
 img.social-link{
@@ -43,11 +46,11 @@ img.social-link{
 }
 
 .social-link-a{
-	width:25px;
+	width:125px;
 }
 
 .social-navigation-links{
-		width: 25%;
+		width: 55%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -73,11 +76,11 @@ img.social-link{
 }
 
 .overlay-content{
-  position: relative;
-  top: 58%;
+	position: relative;
+  top: 50%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 65px;
   overflow-x: hidden;
   z-index: 20;
   transform: translateY(-60%);
@@ -93,6 +96,7 @@ img.social-link{
 	margin-top: 1em;
 	overflow-x: hidden;
 	font-size:24px;
+	transition:0.2s ease;
 	z-index: 50;
 }
 
@@ -107,13 +111,10 @@ img.social-link{
 	position: fixed;
 	top:2em;
 	right:5%;
-    margin-top: 32px;
-    margin-right: 77px;
 }
 
 .openbtn:hover{
-	color: red;
-
+	transform: scale(1.2);
 }
 
 .closebtn{
@@ -121,19 +122,40 @@ img.social-link{
 	position:absolute;
 	transform-origin: center;
 	right:5%;
-
 }
 
 /*LOGO*/
 .logo{
     position: fixed;
-		width:215px !important;
+    left: 5%;
+		width:150px;
+		top:1.8em;
 		z-index: 50;
 		-ms-transform: translateX(-50%);
-    margin-top: 30px;
-    margin-left: 77px;
 }
 
+/*LOADER*/
+.loader-overlay{
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 55;
+		transition: opacity 0.6s ease;
+}
+
+
+.loader-video{
+	width: 75%;
+    height: 75%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+		transition: opacity 0.6s ease;
+}
 /*WORKS*/
 
 .work-bg{
@@ -147,17 +169,17 @@ img.social-link{
 }
 
 .work {
-	margin-top: 4.1em;
+	margin-top: 5em;
 	margin-left: auto;
 	margin-right: auto;
-   position: relative;
+  position: relative;
   width: 75%;
 	z-index: -1;
 }
 
 .work-image {
   display: block;
-	width: 95%;
+	width: 100%;
   height: auto;
 	z-index: -1;
 }
@@ -206,29 +228,24 @@ img.social-link{
 
 .photographer{
 	display: inline;
-	font-size: 12px;
+	font-size: 11px;
 	margin-bottom:0.5em;
-    color: #666
+    color: #666;
 }
 
 
 
 .photographer-title{
 	display: inline;
-	font-size:12px;
-
+	font-size:11px;
 }
 
 
 /*BLOG*/
-
 .featured-post{
 	position: relative;
-	width: 87%;
-    padding: 0px;
-	height: 80vh;
-    margin-left: 65px;
-    margin-top: 100px;
+	width: 100%;
+	height: 100vh;
 	background-image: url('images/photo_example.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -256,22 +273,21 @@ img.social-link{
 .featured-post-title{
 	padding:0.5em 0;
 	line-height: 1.2;
-    font-size: 35px;
-    font-family: 'martel sans';
-    font-weight: 100;
+    font-size: 1.7em;
 }
 
 hr{
 	width:150px;
+	height: 1px;
+	background-color: white;
 }
 
-
 .featured-post-introtext{
-	font-size:16px;
+	font-size:12px;
 	padding: 1em 0;
 	line-height: 1.4;
 	font-family: 'Martel Sans';
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .featured-post-bodytext{
@@ -296,10 +312,8 @@ hr{
 	z-index:50;
 }
 
-
 .post{
-	padding: 0.9em;
-    margin: 0.95em;
+	padding: 1em;
 }
 
 .post-thumbnail-text{
@@ -308,15 +322,14 @@ hr{
 
 .post-title{
 	line-height: 1.2;
-    font-size: 1.7em;
 }
 
 .post-introtext{
-	font-size:16px;
-	padding: 0.9em 0;
+	font-size:14px;
+	padding: 1em 0;
 	line-height: 1.4;
   font-family: 'Martel Sans';
-  font-weight: 200;
+  font-weight: 400;
 
 
 }
@@ -339,16 +352,17 @@ hr{
 
 .contact-page-title{
 	padding-top: 1em;
-	padding-bottom: 0.25em;
-	font-size:48px;
-	opacity: 0.5;
+	padding-bottom: 0.15em;
+	font-size:40px;
+	opacity: 0.6;
+    color: #666;
 	width: 100%;
 
 }
 
 .contact-page-sub-title{
 	padding-bottom: 0.5em;
-	font-size:36px;
+	font-size:30px;
 }
 
 .contact-page-headers-container{
@@ -407,7 +421,7 @@ padding: 1em 1em;
 .about-page-title{
 text-align: center;
 padding:3.5em 0 1.5em 0;
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 
 .about-page-image{
@@ -422,15 +436,16 @@ padding:3.5em 0 1.5em 0;
 }
 
 
-/*CINQTONALITÉS*/
+/*CINQTONALITÃ‰S*/
 
 .cinqtonalites-container{
 
-	width: 25%;
+	width: 35%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-    position: absolute;
+
+	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%)
@@ -439,9 +454,11 @@ padding:3.5em 0 1.5em 0;
 
 .cinqtonalites-image{
 	transform: rotate(-90deg);
-	width: 30%
+	width: 50%
 }
 
+.cinq-tonalités-title{font-size: 1.2em}
+.coming-soon{color: #666 ; font-size: 1em}
 
 
 
@@ -451,20 +468,21 @@ padding:3.5em 0 1.5em 0;
 	.openbtn{
 		top:2.5em
 
-
 	}
 
 	.logo{
-		top:2.5em;
+		top:2.75em;
 
 	}
 
 	.works-container{
 		display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-		padding-bottom: 4em;
+		padding-bottom: 5em;
 		padding-top: 5em;
 		z-index: -1;
+		opacity: 0;
+		transition:all 0.6s ease;
 	}
 
 	.work:nth-child(1) {
@@ -488,18 +506,15 @@ padding:3.5em 0 1.5em 0;
 
 	}
 
-/*NAVIGATION*/
-.burger-menu-line-1{
-	border-bottom:2px solid black;
-    width: 40px;
-    margin-bottom: 5px;
+
+	.burger-menu-line-1{
+	width:40px;
 }
 
 .burger-menu-line-2{
-    border-bottom:2px solid black;
-    width: 40px;
-
+	width:40px;
 }
+
 
 	img.social-link{
   width: 40px;
@@ -547,16 +562,23 @@ padding:3.5em 0 1.5em 0;
 /*DESKTOP*/
 @media screen and (min-width: 60em){
 
+
+
 	.logo{
-		width:250px;
-		left:3%;
-		top:2em;
+		width:215px;
+        margin-top: 25px;
+        margin-left: 60px;
+        position: fixed;
 	}
 
 	.openbtn{
-		right: 3%;
-		top:2.5em;
+
+	right:5%;
+    margin-top: 28px;
+    margin-right: 60px;
+        position: fixed;
 	}
+
 
 
 	.burger-menu-line-1{
@@ -566,21 +588,28 @@ padding:3.5em 0 1.5em 0;
 
 .burger-menu-line-2{
 	width:60px;
-	height:4px;
+
 }
+
+    .overlay-content{margin-top: 80px}
 
 
 	.work{
 		position: relative;
 	}
+    .works-container{margin: 10px}
+
+    .work-image {
+    width: 94%;}
 
 	.work-credits{
 		/*		opacity: 0;*/
-		padding:1em 0;
+		padding:0em 0;
+        margin-left: 20px;
 	}
 
 	.work-credits:hover{
-		opacity:1
+		opacity:1;
 		padding:2em;
 
 	}
@@ -595,7 +624,7 @@ padding:3.5em 0 1.5em 0;
 	img.social-link{
   width: 50px;
 	padding:0.5em;
-	transition: width 0.4s ease;
+
 }
 
 	img.social-link:hover{
@@ -603,19 +632,49 @@ padding:3.5em 0 1.5em 0;
 	}
 
 	.social-link-a{
-		width:50px;
-		transition: width 0.4s ease;
+		width:100px;
+
+
+
 	}
+    .social-navigation-links{width: 30%}
 
 	.social-link-a:hover{
 		width:55px;
+
 	}
 
+    .about-page-image{width: 65%;}
+    .about-page-text{margin-top: 100px; margin-right: 50px; padding: 0;
+    line-height: 30px;
+    font-size: 0.9em}
 	.blog-container{
 		display: flex;
 		max-width: 100%;
 
 	}
+
+	.blog-post-container{
+		flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	}
+
+    .featured-post{
+	position: relative;
+	width: 87%;
+    padding: 0px;
+	height: 80vh;
+    margin-left: 65px;
+    margin-top: 120px;
+	background-image: url('images/photo_example.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -1;
+    position: sticky;
+    position: -webkit-sticky;
+    top:7.5em;
+}
 
 	.featured-post-container{
 		width: 50vw;
@@ -623,18 +682,17 @@ padding:3.5em 0 1.5em 0;
 		z-index: -1;
 		}
 
-	.featured-post{
-		position: sticky;
-		position: -webkit-sticky;
-		top:0;
+
+
+	.post-container{
+		margin-top: 6.2em;
+        margin-right: 55px;
+        padding: 5px;
+
 	}
 
 	.post-container{
-		padding-top: 5em;
-	}
 
-	.post-container{
-		width: 50vw;
 		flex:1;
 		float: right;
 	}
@@ -665,6 +723,10 @@ padding:3.5em 0 1.5em 0;
 		margin-left: 10em;
 	}
 
+
+    .cinqtonalites-image{width: 30%}
+    .cinq-tonalités-title{font-size: 1.6em}
+.coming-soon{color: #666 ; font-size: 1.3em}
 
 
 

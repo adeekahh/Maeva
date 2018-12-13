@@ -22,7 +22,7 @@ function showSinglePost(post) {
   copy2.querySelector(".bodytext").textContent = post.acf.bodytext;
   copy2.querySelector(".date").textContent = post.acf.date;
   copy2.querySelector(".author").textContent = post.acf.author;*/
-  document.querySelector(".blog-container").appendChild(copy2);
+  document.querySelector(".blog-post-container").appendChild(copy2);
 	setTimeout(document.querySelector('.featured-readmore-button').addEventListener('click', showFeaturedText), 100);
 
 }
