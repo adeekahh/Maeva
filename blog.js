@@ -6,6 +6,11 @@ function getBlogPosts() {
   fetch("http://adammolnar.dk/examproject/wp-json/acf/v3/blogpost?_embed")
     .then(res => res.json())
     .then(showPosts)
+
+	fetch("http://adammolnar.dk/examproject/wp-json/wp/v2/blogpost")
+	.then(res=> res.json())
+	.then(showPosts)
+
 }
 
 function showPosts(postList) {
@@ -17,7 +22,7 @@ function showSinglePost(post) {
   console.log(post)
   const copy2 = templatePosts.cloneNode(true);
   copy2.querySelector("img").src = post.acf.image;
-  copy2.querySelector("h1").textContent = post.acf.title;
+  copy2.querySelector("h1").textContent = post.title.rendered;
   copy2.querySelector(".post-introtext").textContent = post.acf.introtext;
 	copy2.querySelector('.read-more-link').href = "blog-post.html?id=" + post.id;
 	/*

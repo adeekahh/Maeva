@@ -2,4 +2,5 @@
 - add metadata
 - make gif of loader
 - add alt texts to images
+- force https
 
