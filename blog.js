@@ -10,7 +10,7 @@ function getBlogPosts() {
 
 function showPosts(postList) {
   postList.forEach(showSinglePost)
-	console.log(postList);
+
 }
 
 function showSinglePost(post) {
