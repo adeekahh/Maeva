@@ -8,22 +8,18 @@
 	<!--Link to Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
-
-	</head>
+	<link rel="stylesheet" href="style.css"> </head>
 
 <body>
 	<header>
 		<!-------------------------NAVIGATION-------------------------->
-
-			<a href="index.html"><img class="logo" src="images/maeva-logo.svg" alt="logo"></a>
-
-			<span class="openbtn" onclick="openNav()"><div class="burger-menu">
+		<div class="mobile-navigation">
+			<a href="index.html"><img class="logo" src="images/maeva-logo.svg" alt="logo"></a> <span class="openbtn" onclick="openNav()"><div class="burger-menu">
 				<div class="burger-menu-line-1"></div>
 
 				<div class="burger-menu-line-2"></div>
 
-				</div></span>
+				</div></span> </div>
 		<nav id="myNav" class="overlay"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
 			<ul class="overlay-content">
 				<li class="navigation-link navigation-link-1"><a href="index.html">Works</a></li>
@@ -41,52 +37,27 @@
 		<!---------------------END OF NAVIGATION---------------------->
 	</header>
 	<main>
-		<!--------------------------WORKS----------------------------->
-			<div class="loader-overlay">
-			<video class="loader-video" src="images/video.mp4" autoplay muted></video>
-			</div>
-			<!--<div class="work-bg"></div>-->
-			<p class="down-arrow">↓</p>
+		<!-------------------------- BLOG-POST ----------------------------->
+		<div class="blog-post-container">
 
-			<div class="works-container">
-
-
-</div>
-		<!-----------------------END OF WORKS------------------------->
-
-		<!----------------------TEMPLATE FOR WORKS--------------------->
-		<template id="template-works">
-			<!--
-			<div class="work">
-				<img src="images/photo_example.jpg" alt="Image" class="work-image">
-				<div class="work-overlay"></div>
-				<div class="work-credits">
-							<h2 class="photographer-title">Photographer</h2>
-							<l3 class="photographer"></l3>
-				</div>
-			</div>-->
-
-			<div class="work">
-					<div class="work-inner">
-
-						<img src="images/photo_example.jpg" alt="Image" class="work-image">
-				<!--<div class="work-overlay"></div>-->
-				<div class="work-credits">
-							<h2 class="photographer-title">Photographer // </h2>
-							<h3 class="photographer"></h3>
-				</div>
-
+		</div>
+		<!-----------------------END OF BLOG-POST------------------------->
+		<!----------------------TEMPLATE FOR BLOGPOSTS - FULL --------------------->
+		<template id="template-blogposts">
+			<div class="post-container">
+				<div class="post"> <img class="post-photo" src="#">
+					<div class="post-thumbnail-text">
+						<h1 class="post-title"></h1>
+						<h2 class="post-introtext"></h2>
+						<button class="readmore-button">Read more</button>
 					</div>
-
+				</div>
 			</div>
-
-				</template>
-		<!---------------------END OF TEMPLATE FOR WORKS---------------->
+		</template>
+		<!---------------------END OF TEMPLATE FOR BLOGPOSTS - FULL ---------------->
 	</main>
-	<script src="works.js"></script>
+	<script src="blog.js"></script>
 	<script src="mobilenav.js"></script>
-	<script src="loader.js"></script>
-
 </body>
 
 </html>
