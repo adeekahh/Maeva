@@ -3,4 +3,6 @@
 - make gif of loader
 - add alt texts to images
 - force https
+- add favicon
+- validate HTML and CSS
 
