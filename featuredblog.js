@@ -16,7 +16,7 @@ function showFeaturedPosts(featuredPostList) {
 
 	var featuredPost = featuredPostList[0];
 
-	document.querySelector('.featured-post').style.backgroundImage = "url('" +featuredPost.acf.thumbnail_image.url+ "')";
+	document.querySelector('.featured-post').style.backgroundImage = "url('" +featuredPost.acf.thumbnail_image+ "')";
 
 	document.querySelector('.featured-post-introtext').innerHTML = featuredPost.acf.introtext;
 

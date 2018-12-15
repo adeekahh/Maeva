@@ -8,9 +8,12 @@ fetch("http://adammolnar.dk/examproject/wp-json/wp/v2/featured_post/" + id + "?_
 
 function showSingleFeaturedPost(aFeaturedPost) {
     console.log(aFeaturedPost);
-    const singleFeaturedPost = document.querySelector("#featured-singlePost");
-    document.querySelector("h1").textContent = aFeaturedPost.title.rendered;
-    document.querySelector(".featured-description").innerHTML = aFeaturedPost.content.rendered;
+
+ 	 	document.querySelector(".featured-hero-img").src = aFeaturedPost.acf.thumbnail_image;
+		document.querySelector(".featured-single-post-header").textContent = aFeaturedPost.title.rendered;
+		document.querySelector(".featured-single-post-intro-text").textContent = aFeaturedPost.acf.introtext;
+    document.querySelector(".featured-single-post-content").innerHTML = aFeaturedPost.content.rendered;
+		document.querySelector(".featured-single-post-author").innerHTML = aFeaturedPost.acf.author;
 }
 
 
