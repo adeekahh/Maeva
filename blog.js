@@ -19,7 +19,7 @@ function showPosts(postList) {
 }
 
 function showSinglePost(post) {
-  console.log(post)
+//  console.log(post)
   const copy2 = templatePosts.cloneNode(true);
   copy2.querySelector("img").src = post.acf.image;
   copy2.querySelector("h1").textContent = post.title.rendered;
@@ -38,11 +38,8 @@ getBlogPosts();
 
 
 function showFeaturedText(){
-	document.querySelector('.featured-post-bodytext').style.display='block';
 
-
-	setTimeout(document.querySelector('.featured-readmore-button').addEventListener('click', hideFeaturedText), 100);
-	console.log('showingthetext');
+	//console.log('showingthetext');
 
 };
 

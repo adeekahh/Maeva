@@ -10,16 +10,11 @@ function getFeaturedBlogPosts() {
 }
 
 function showFeaturedPosts(featuredPostList) {
-  featuredPostList.forEach(showSingleFeaturedPost)
+  featuredPostList.forEach(showSingleFeaturedPost);
+
 	console.log(featuredPostList[0]);
 
-}
-
-getFeaturedBlogPosts();
-
-function showSingleFeaturedPost(featuredPost){
-
-	console.log(featuredPost);
+	var featuredPost = featuredPostList[0];
 
 	document.querySelector('.featured-post').style.backgroundImage = "url('" +featuredPost.acf.thumbnail_image.url+ "')";
 
@@ -29,8 +24,17 @@ function showSingleFeaturedPost(featuredPost){
 
 	document.querySelector('.featured-post-title').innerHTML = featuredPost.title.rendered;
 
+}
+
+getFeaturedBlogPosts();
+
+function showSingleFeaturedPost(featuredPost){
+
+	//console.log(featuredPost);
 
 
-	console.log(featuredPost.acf.thumbnail_image.url);
+
+
+//	console.log(featuredPost.acf.thumbnail_image.url);
 
 }

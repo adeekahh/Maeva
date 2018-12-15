@@ -1,4 +1,4 @@
-- add - titles to pages
++ add - titles to pages
 - add metadata
 - make gif of loader
 - add alt texts to images
