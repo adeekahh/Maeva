@@ -12,75 +12,106 @@
 
 <body>
 	<header>
-		<!-------------------------NAVIGATION-------------------------->
-		<div class="mobile-navigation">
-			<a href="index.html"><img class="logo" src="images/maeva-logo.svg" alt="logo"></a> <span class="openbtn" onclick="openNav()"><div class="burger-menu">
+		<!--NAVIGATION-->
+		<!--LOGO-->
+		<a href="index.html"><img class="logo" src="images/maeva-logo.svg" alt="logo"></a>
+		<!-- Burger Menu -->
+		<span class="openbtn" onclick="openNav()">
+			<div class="burger-menu">
 				<div class="burger-menu-line-1"></div>
-
 				<div class="burger-menu-line-2"></div>
+			</div>
+		</span>
 
-				</div></span> </div>
-
+		<!-- Navigation white background -->
 		<div class="nav-bg"></div>
-		<nav id="myNav" class="overlay"> <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Navigation background when it's opened-->
+		<nav id="myNav" class="overlay">
+			<!-- Navigation close button -->
+			<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Navigation Links -->
 			<ul class="overlay-content">
+
 				<li class="navigation-link navigation-link-1"><a href="index.html">Works</a></li>
 				<li class="navigation-link navigation-link-2"><a href="cinqtonalites.html">Cinq Tonalités</a></li>
 				<li class="navigation-link navigation-link-3"><a href="blog.html">Blog</a></li>
 				<li class="navigation-link navigation-link-4"><a href="about.html">About</a></li>
 				<li class="navigation-link navigation-link-5"><a href="contact.html">Contact</a></li>
+
+				<!-- Social Links -->
 				<div class="navigation-link navigation-link-6 social-navigation-links">
-				<a href="https://www.instagram.com/cinqtonalites/" class="social-link-a"><img class="social-link" src="images/Instagram.png"></a>
-				<a href="#" class="social-link-a"><img class="social-link" src="images/LinkedIn.png" ></a>
-				<a href="https://www.pinterest.fr/pixartl/inspirations-cinqtonalites-paris/?sender=531002749723091653&invite_code=93f9125e840b4e4b9c156387aa86cef7" class="social-link-a"><img class="social-link" src="images/Pinterest.png"></a>
+					<!-- Instagram Icon-->
+					<a href="https://www.instagram.com/cinqtonalites/" class="social-link-a"><img class="social-link" src="images/Instagram.png"></a>
+					<!-- LinkedIn Icon -->
+					<a href="#" class="social-link-a"><img class="social-link" src="images/LinkedIn.png"></a>
+					<!-- Pinterest Icon -->
+					<a href="https://www.pinterest.fr/pixartl/inspirations-cinqtonalites-paris/?sender=531002749723091653&invite_code=93f9125e840b4e4b9c156387aa86cef7" class="social-link-a"><img class="social-link" src="images/Pinterest.png"></a>
 				</div>
 			</ul>
 		</nav>
-		<!---------------------END OF NAVIGATION---------------------->
+		<!--END OF NAVIGATION-->
 	</header>
 	<main>
-		<!-------------------------- BLOG ----------------------------->
+		<!--BLOG-->
 		<div class="blog-container">
+			<!-- Featured Post Container -->
 			<div class="featured-post-container">
 				<div class="featured-post">
+
+					<!-- Featured Post Overlay, Title and Introtext Container  -->
 					<div class="featured-post-thumbnail-text">
+						<!-- Featured Post Title -->
 						<h1 class="featured-post-title"></h1>
+						<!-- Featured Post Title Underline -->
 						<hr>
+
+						<!-- Featured Post Introtext -->
 						<h2 class="featured-post-introtext">
 					</h2>
-
+					<!-- Featured Post Readmore button -->
 				<a class="featured-post-readmore-link" href="">
-
 				<button  class="featured-readmore-button">Read More</button>
 					</a>
 					</div>
 				</div>
 			</div>
-			<div class="blog-post-container">
 
-
-
-			</div>
+			<!-- Blog Post Container -->
+			<div class="blog-post-container"></div>
 		</div>
-		<!-----------------------END OF BLOG------------------------->
-		<!----------------------TEMPLATE FOR BLOGPOSTS--------------------->
+		<!--END OF BLOG-->
+
+		<!--TEMPLATE FOR BLOGPOSTS-->
 		<template id="template-blogposts">
+
 			<div class="post-container">
-				<div class="post"> <img class="post-photo" src="#">
+				<div class="post">
+					<!-- Post Thumbnail Image-->
+					<img class="post-photo" src="#">
+					<!-- Post Title, Introtext Container-->
 					<div class="post-thumbnail-text">
+						<!-- Post Title -->
 						<h1 class="post-title"></h1>
+
+						<!-- Post Introtext -->
 						<h2 class="post-introtext"></h2>
+
+						<!-- Post Readmore Button -->
 						<a class="read-more-link" href="blog-post.html?id=1"><button  class="readmore-button">Read more</button></a>
 					</div>
 				</div>
 			</div>
 		</template>
-		<!---------------------END OF TEMPLATE FOR BLOGPOSTS---------------->
+<!--END OF TEMPLATE FOR BLOGPOSTS-->
 	</main>
+
+	<!-- SCRIPTS -->
 	<script src="featuredblog.js"></script>
 
-	<script src="blog.js"></script>
-	<script src="mobilenav.js"></script>
+	<script src="/js/blog.js"></script>
+	<script src="/js/mobilenav.js"></script>
 </body>
 
 </html>
