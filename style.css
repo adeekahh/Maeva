@@ -484,12 +484,12 @@ padding: 1em 1em;
 
 .about-page-title{
 text-align: center;
-padding:3.5em 0 1.5em 0;
+padding:1em 0 1.5em 0;
     font-size: 1.8em;
 }
 
 .about-page-image{
-	padding-bottom: 1em;
+	padding-bottom: 3em;
 	margin-bottom: 1em;
 	border-bottom: 1px solid #DBDBDB;
 }
