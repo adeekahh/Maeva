@@ -22,10 +22,7 @@ a{
 
 }
 
-button{
-	border-radius:3px;
-	cursor: pointer;
-}
+
 
 
 
@@ -324,8 +321,9 @@ hr{
 }
 
 .featured-readmore-button{
+	width:95%;
+	text-align: center;
 	padding: 1em;
-	width: 100%;
 	margin: 1em 0;
 	background-color: white;
 	border: none;
@@ -333,6 +331,8 @@ hr{
 	font-size:16px;
 	z-index:50;
 	cursor: pointer;
+	border-radius:3px;
+
 }
 
 .post{
@@ -359,7 +359,10 @@ hr{
 
 .readmore-button{
 	padding: 1em;
-	width: 100%;
+	width: 95%;
+	text-align: center;
+	cursor: pointer;
+	border-radius:3px;
 	margin: 1em 0;
 	background-color: black;
 	color: white;
@@ -709,6 +712,7 @@ padding:1em 0 1.5em 0;
 
 	.about-page-text{
 		padding:0;
+		padding-bottom: 2em;
 	}
 
 
@@ -846,12 +850,12 @@ padding:1em 0 1.5em 0;
             to{
                 transform: translate(-50%,-15px);
             }
-
+	}
     .cinqtonalites-image{width: 30%;}
-    .cinq-tonalités-title{font-size: 1.6em}
-.coming-soon{color: #666 ; font-size: 1.3em}
+    .cinq-tonalites-title{font-size: 1.6em;}
+.coming-soon{color: #666 ; font-size: 1.3em;}
 
 
 
-}
+
 }

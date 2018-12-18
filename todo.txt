@@ -3,10 +3,10 @@
 + make gif of loader
 - add alt texts to images
 + force https
-- add favicon
++ add favicon
 - validate HTML and CSS
 + oragnize source files
 + check excessive DOM elements
 + fix navigation
-- about page title positioning
++ about page title positioning
 
