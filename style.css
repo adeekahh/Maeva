@@ -51,7 +51,7 @@ img.social-link{
 }
 
 .social-link-a{
-	width:125px;
+	width:55px;
 }
 
 .social-navigation-links{
@@ -65,6 +65,8 @@ img.social-link{
 	justify-content: center;
 
 }
+
+
 
 .nav-bg{
 		width: 100%;
@@ -138,6 +140,11 @@ img.social-link{
 	transform-origin: center;
 	right:5%;
 }
+
+.icon-top{
+		position: absolute;
+		transition: opacity 0.2s ease;
+	}
 
 /*LOGO*/
 .logo{
@@ -220,13 +227,7 @@ img.social-link{
 
 }
 
-.work:hover .work-overlay {
-  opacity: .75;
-}
 
-.work:hover .work-credits{
-	opacity: 1;
-}
 
 .work-credits {
   font-size: 20px;
@@ -581,11 +582,15 @@ padding:3.5em 0 1.5em 0;
 }
 
 	.social-link-a{
-		width:40px;
+		width:75px;
 		display: inline;
 	}
 
 
+
+	.icon-top:hover{
+		opacity: 0;
+	}
 
 	/*ABOUT PAGE - TABLET */
 
@@ -670,11 +675,7 @@ padding:3.5em 0 1.5em 0;
         margin-left: 20px;
 	}
 
-	.work-credits:hover{
-		opacity:1;
-		padding:2em;
 
-	}
 
 	.work-overlay{
 		display: block;
@@ -689,22 +690,16 @@ padding:3.5em 0 1.5em 0;
 
 }
 
-	img.social-link:hover{
-	width:55px;
-	}
 
 	.social-link-a{
-		width:100px;
+		width:125px;
 
 
 
 	}
     .social-navigation-links{width: 30%}
 
-	.social-link-a:hover{
-		width:55px;
 
-	}
 
     .about-page-image{width: 65%;}
     .about-page-text{margin-top: 100px; margin-right: 50px; padding: 0;
