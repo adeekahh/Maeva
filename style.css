@@ -687,11 +687,12 @@ padding:1em 0 1.5em 0;
 		margin-right: auto;
 		max-width: 80%;
 		padding:8vw 2em 0em 2em;
+   
 	}
 
 	.about-page-image{
 		width: 100%;
-		max-width: 540px;
+		max-width: 450px;
 		height: 100%;
 		flex: 1;
 		border: 0;
@@ -702,8 +703,7 @@ padding:1em 0 1.5em 0;
 		flex: 1;
 		padding:2em;
 		margin-bottom: 5em;
-
-		border-left	: 1px solid #DBDBDB;
+        border-left	: 1px solid #DBDBDB;
 	}
 
 	.about-page-title{
@@ -713,6 +713,7 @@ padding:1em 0 1.5em 0;
 	.about-page-text{
 		padding:0;
 		padding-bottom: 2em;
+        font-size: 1em; font-weight: 100;
 	}
 
 
@@ -745,6 +746,7 @@ padding:1em 0 1.5em 0;
   top:7.5em;
 }
 
+    .featured-post-introtext{font-size: 0.9em; font-family: "martel sans"}
 	.featured-post-container{
 		width: 50vw;
     float: left;
@@ -752,13 +754,16 @@ padding:1em 0 1.5em 0;
 		}
 
 
+ .post-title{font-size: 1.4em}
 
 	.post-container{
 		margin-top: 6.2em;
         margin-right: 55px;
         padding: 5px;
+       
 
 	}
+    .post-photo{width: 100%}
 
 	.post-container{
 
@@ -789,6 +794,13 @@ padding:1em 0 1.5em 0;
 		width: 40vw;
 	}
 
+    .featured-hero-img{width:55%}
+    
+    .featured-single-post-intro-text{font-size: 1em; font-weight: 400}
+    
+    .featured-single-post-author{font-size: 0.8em; margin-left: 135px}
+    
+    
 	.blog-content, .featured-post-content{
 		padding: 10em 8em;
 	}
@@ -802,6 +814,7 @@ padding:1em 0 1.5em 0;
 	.single-post-title, .featured-single-post-header{
 		grid-column-start:2;
 	}
+    
 
 	.single-post-content, .featured-single-post-content{
 		margin-top:5em;
@@ -830,6 +843,9 @@ padding:1em 0 1.5em 0;
 		padding-bottom: 3em;
 	}
 
+    .hero-img{width: 55%}
+    .single-post-intro-text{font-size: 1em; font-weight: 400}
+    .single-post-author{font-size: 0.8em; margin-left: 135px}
 
 	input[type=submit]{
 		margin-left: 10em;
@@ -856,6 +872,5 @@ padding:1em 0 1.5em 0;
 .coming-soon{color: #666 ; font-size: 1.3em;}
 
 
-
-
+   
 }
