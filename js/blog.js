@@ -22,6 +22,7 @@ function showSinglePost(post) {
 //  console.log(post)
   const copy2 = templatePosts.cloneNode(true);
   copy2.querySelector("img").src = post.acf.image;
+  copy2.querySelector("img").alt = post.acf.alt;
   copy2.querySelector("h1").textContent = post.title.rendered;
   copy2.querySelector(".post-introtext").textContent = post.acf.introtext;
 	copy2.querySelector('.read-more-link').href = "blog-post.html?id=" + post.id;
@@ -34,8 +35,3 @@ function showSinglePost(post) {
 }
 
 getBlogPosts();
-
-
-
-
-

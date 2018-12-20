@@ -11,10 +11,9 @@ function showSinglePost(aPost) {
 
     let singlePost = document.querySelector("#singlePost");
  	 	document.querySelector(".hero-img").src = aPost.acf.image;
+    document.querySelector(".hero-img").src = aPost.acf.alt;
 		document.querySelector(".single-post-title").textContent = aPost.title.rendered;
 		document.querySelector(".single-post-intro-text").textContent = aPost.acf.introtext;
     document.querySelector(".single-post-content").innerHTML = aPost.content.rendered;
 		document.querySelector(".single-post-author").innerHTML = aPost.acf.author;
 }
-
-

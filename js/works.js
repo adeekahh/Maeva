@@ -25,6 +25,8 @@ function showWorks(workList) {
 function showSingleWork(work) {
   const copy = workTemplate.cloneNode(true);
   copy.querySelector(".work-image").src = work.acf.pictures;
+  copy.querySelector(".work-image").alt = work.acf.alt;
+
 
 	//photographer
 	if (work.acf.photographer == false) {
@@ -35,4 +37,3 @@ function showSingleWork(work) {
 
 
 }
-
