@@ -5,7 +5,7 @@ const workTemplate = document.querySelector("#template-works").content;
 
 
 function getWorks() {
-  fetch("http://adammolnar.dk/examproject/wp-json/acf/v3/works")
+  fetch("https://adammolnar.dk/examproject/wp-json/acf/v3/works")
     .then(res => res.json())
     .then(showWorks);
 }

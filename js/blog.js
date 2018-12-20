@@ -3,11 +3,11 @@
 const templatePosts = document.querySelector("#template-blogposts").content;
 
 function getBlogPosts() {
-  fetch("http://adammolnar.dk/examproject/wp-json/acf/v3/blogpost?_embed")
+  fetch("https://adammolnar.dk/examproject/wp-json/acf/v3/blogpost?_embed")
     .then(res => res.json())
     .then(showPosts)
 
-	fetch("http://adammolnar.dk/examproject/wp-json/wp/v2/blogpost")
+	fetch("https://adammolnar.dk/examproject/wp-json/wp/v2/blogpost")
 	.then(res=> res.json())
 	.then(showPosts)
 
