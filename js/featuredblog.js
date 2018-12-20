@@ -1,9 +1,9 @@
 function getFeaturedBlogPosts() {
-  fetch("http://adammolnar.dk/examproject/wp-json/acf/v3/featured_post?_embed")
+  fetch("https://adammolnar.dk/examproject/wp-json/acf/v3/featured_post?_embed")
     .then(res => res.json())
     .then(showFeaturedPosts)
 
-	fetch("http://adammolnar.dk/examproject/wp-json/wp/v2/featured_post")
+	fetch("https://adammolnar.dk/examproject/wp-json/wp/v2/featured_post")
 	.then(res=> res.json())
 	.then(showFeaturedPosts)
 

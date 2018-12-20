@@ -13,6 +13,79 @@
 	<link rel="stylesheet" href="style.css"> </head>
 
 <body>
+<header>
+		<!--NAVIGATION-->
+		<!--LOGO-->
+		<a href="index.html"><img class="logo" src="images/maeva-logo.svg" alt="logo"></a>
+		<!-- Burger Menu -->
+		<div class="openbtn" onclick="openNav()">
+			<div class="burger-menu">
+				<div class="burger-menu-line-1"></div>
+				<div class="burger-menu-line-2"></div>
+			</div>
+		</div>
+
+		<!-- Navigation white background -->
+		<div class="nav-bg"></div>
+
+		<!-- Navigation background when it's opened-->
+		<nav id="myNav" class="overlay">
+			<!-- Navigation close button -->
+			<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Navigation Links -->
+
+			<div class="overlay-content">
+				<ul class="navigation-link-ul">
+					<li class="navigation-link navigation-link-1"><a href="index.html">Works</a></li>
+					<li class="navigation-link navigation-link-2"><a href="cinqtonalites.html">Cinq Tonalités</a></li>
+					<li class="navigation-link navigation-link-3"><a href="blog.html">Blog</a></li>
+					<li class="navigation-link navigation-link-4"><a href="about.html">About</a></li>
+					<li class="navigation-link navigation-link-5"><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<div class="navigation-link navigation-link-6 social-navigation-links">
+					<!-- Instagram Icon-->
+					<div class="instagram-icons">
+
+						<a href="https://www.instagram.com/cinqtonalites/" class="social-link-a  icon-top"><img class="social-link" src="images/Instagram.png" alt="instagram-icon"></a>
+
+						<a href="https://www.instagram.com/cinqtonalites/" class="social-link-a"><img class="social-link" src="images/instagram_skin.png" alt="instagram-icon"></a>
+
+					</div>
+
+
+					<!-- Facebook Icon -->
+					<div class="facebook-icons">
+
+						<a href="https://www.facebook.com/cinqtonalites" class="social-link-a  icon-top"><img class="social-link" src="images/facebook.png" alt="facebook-icon"></a>
+
+						<a href="https://www.facebook.com/cinqtonalites" class="social-link-a"><img class="social-link" src="images/facebook_skin.png" alt="facebook-icon"></a>
+
+					</div>
+					<!-- LinkedIn Icon -->
+					<div class="linkedin-icons">
+						<a href="#" class="social-link-a  icon-top"><img class="social-link" src="images/LinkedIn.png" alt="linkedin-icon"></a>
+
+						<a href="#" class="social-link-a"><img class="social-link" src="images/linkedin_skin.png" alt="linkedin-icon"></a>
+
+
+					</div>
+					<!-- Pinterest Icon -->
+					<div class="pinterest-icons">
+						<a href="https://www.pinterest.fr/pixartl/inspirations-cinqtonalites-paris/?sender=531002749723091653&invite_code=93f9125e840b4e4b9c156387aa86cef7" class="social-link-a  icon-top"><img class="social-link" src="images/Pinterest.png" alt="pinterest-icon"></a>
+
+
+						<a href="https://www.pinterest.fr/pixartl/inspirations-cinqtonalites-paris/?sender=531002749723091653&invite_code=93f9125e840b4e4b9c156387aa86cef7" class="social-link-a"><img class="social-link" src="images/pinterest_skin.png" alt="pinterest-icon"></a>
+					</div>
+				</div>
+			</div>
+			<!-- Social Links -->
+
+
+		</nav>
+		<!--END OF NAVIGATION-->
+	</header>
 	<main>
 		<!-- FEATURED-BLOG-POST -->
 
@@ -34,8 +107,8 @@
 
 		<!--END OF BLOG-POST-->
 	</main>
-	<script src="/js/featured-blog-post.js"></script>
-	<script src="/js/mobilenav.js"></script>
+	<script src="js/featured-blog-post.js"></script>
+	<script src="js/mobilenav.js"></script>
 </body>
 
 </html>

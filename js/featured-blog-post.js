@@ -2,7 +2,7 @@ let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get("id");
 
 
-fetch("http://adammolnar.dk/examproject/wp-json/wp/v2/featured_post/" + id + "?_embed")
+fetch("https://adammolnar.dk/examproject/wp-json/wp/v2/featured_post/" + id + "?_embed")
     .then(e => e.json())
     .then(showSingleFeaturedPost)
 

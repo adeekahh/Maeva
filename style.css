@@ -665,19 +665,20 @@ padding:1em 0 1.5em 0;
 
 
 	img.social-link{
-  width: 50px;
+  width: 30px;
 	padding:0.5em;
 
 }
 
 
 	.social-link-a{
-		width:125px;
+		width:70px;
 
 
 
 	}
     .social-navigation-links{width: 30%}
+  
 
 
 .about-page-container{
@@ -687,8 +688,7 @@ padding:1em 0 1.5em 0;
 		margin-right: auto;
 		max-width: 80%;
 		padding:8vw 2em 0em 2em;
-   
-	}
+   }
 
 	.about-page-image{
 		width: 100%;
@@ -867,9 +867,10 @@ padding:1em 0 1.5em 0;
                 transform: translate(-50%,-15px);
             }
 	}
-    .cinqtonalites-image{width: 30%;}
+    .cinqtonalites-image{width:10%;}
     .cinq-tonalites-title{font-size: 1.6em;}
 .coming-soon{color: #666 ; font-size: 1.3em;}
+    
 
 
    
